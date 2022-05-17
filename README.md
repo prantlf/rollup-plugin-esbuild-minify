@@ -12,7 +12,7 @@ Simpler than [rollup-plugin-esbuild] and [rollup-plugin-esbuild-transform], focu
 ## Synopsis
 
 ```js
-import { litScss } from 'rollup-plugin-esbuild-minify'
+import { minify } from 'rollup-plugin-esbuild-minify'
 
 export default {
   plugins: [minify()]
