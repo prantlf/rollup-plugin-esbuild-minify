@@ -1,0 +1,86 @@
+{
+  "name": "rollup-plugin-esbuild-minify",
+  "version": "1.0.0",
+  "description": "Rollup plugin to minify generated bundles using esbuild.",
+  "author": "Ferdinand Prantl <prantlf@gmail.com> (http://prantl.tk)",
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/prantlf/rollup-plugin-esbuild-minify/blob/master/LICENSE"
+    }
+  ],
+  "homepage": "http://prantlf.github.com/rollup-plugin-esbuild-minify/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prantlf/rollup-plugin-esbuild-minify.git"
+  },
+  "bugs": {
+    "url": "http://github.com/prantlf/rollup-plugin-esbuild-minify/issues"
+  },
+  "type": "module",
+  "module": "lib/index.js",
+  "main": "lib/index.cjs",
+  "files": [
+    "lib"
+  ],
+  "engines": {
+    "node": ">= 14"
+  },
+  "scripts": {
+    "prepare": "rollup -c",
+    "lint": "denolint",
+    "check": "node test",
+    "cover": "c8 node test",
+    "test": "denolint && c8 node test"
+  },
+  "c8": {
+    "check-coverage": true,
+    "reporter": [
+      "text",
+      "lcov"
+    ],
+    "branches": 100,
+    "lines": 100,
+    "functions": 100,
+    "statements": 100
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/github",
+        {
+          "failComment": false
+        }
+      ],
+      "@semantic-release/git"
+    ]
+  },
+  "dependencies": {
+    "esbuild": "^0.14.39"
+  },
+  "devDependencies": {
+    "@node-rs/deno-lint": "^1.13.1",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "c8": "^7.11.3",
+    "rollup": "^2.73.0",
+    "tehanu": "^0.2.2",
+    "tehanu-repo-coco": "^0.0.2"
+  },
+  "peerDependencies": {
+    "lit": "^2",
+    "rollup": "^2"
+  },
+  "keywords": [
+    "rollup",
+    "plugin",
+    "rollup-plugin",
+    "minify",
+    "esbuild"
+  ]
+}
