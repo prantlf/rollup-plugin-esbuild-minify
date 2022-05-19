@@ -73,7 +73,6 @@
     "tehanu-repo-coco": "^0.0.2"
   },
   "peerDependencies": {
-    "lit": "^2",
     "rollup": "^2"
   },
   "keywords": [
