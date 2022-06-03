@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/prantlf/rollup-plugin-esbuild-minify/compare/v1.0.2...v1.0.3) (2022-06-03)
+
+
+### Bug Fixes
+
+* Fix column position of an error ([ebb3fcf](https://github.com/prantlf/rollup-plugin-esbuild-minify/commit/ebb3fcf1789ac11940c4a799e332112500b0c304))
+
 ## [1.0.2](https://github.com/prantlf/rollup-plugin-esbuild-minify/compare/v1.0.1...v1.0.2) (2022-05-19)
 
 
