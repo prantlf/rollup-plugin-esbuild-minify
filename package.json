@@ -10,7 +10,7 @@
       "url": "https://github.com/prantlf/rollup-plugin-esbuild-minify/blob/master/LICENSE"
     }
   ],
-  "homepage": "http://prantlf.github.com/rollup-plugin-esbuild-minify/",
+  "homepage": "http://github.com/prantlf/rollup-plugin-esbuild-minify/",
   "repository": {
     "type": "git",
     "url": "https://github.com/prantlf/rollup-plugin-esbuild-minify.git"
