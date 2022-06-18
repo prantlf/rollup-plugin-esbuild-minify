@@ -61,15 +61,15 @@
     ]
   },
   "dependencies": {
-    "esbuild": "^0.14.42"
+    "esbuild": "^0.14.45"
   },
   "devDependencies": {
     "@node-rs/deno-lint": "^1.13.1",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
     "c8": "^7.11.3",
-    "rollup": "^2.75.5",
-    "tehanu": "^1.0.0",
+    "rollup": "^2.75.6",
+    "tehanu": "^1.0.1",
     "tehanu-repo-coco": "^1.0.0"
   },
   "peerDependencies": {
