@@ -81,5 +81,5 @@ test('minify with source map', async () => {
   strictEqual(code, `var o=()=>{({}!==void 0)&&console.log("glob")};function l(){console.log("help")}export{o as glob,l as help};
 //# sourceMappingURL=out.js.map
 `)
-  strictEqual(map, `{"version":3,"file":"out.js","sources":["glob.js","help.js"],"sourcesContent":["export default () => {\\n  if (this !== {})\\n    console.log('glob')\\n}\\n","export function help() {\\n  console.log('help')\\n}\\n"],"names":["this"],"mappings":"AAAA,GAAA,GAAe,IAAM,CACnB,AAAIA,CAAS,CAAE,IAAXA,SACF,QAAQ,IAAI,MAAM,CACtB,ECHO,YAAgB,CACrB,QAAQ,IAAI,MAAM,CACpB"}`)
+  strictEqual(map, `{"version":3,"file":"out.js","sources":["glob.js","help.js"],"sourcesContent":["export default () => {\\n  if (this !== {})\\n    console.log('glob')\\n}\\n","export function help() {\\n  console.log('help')\\n}\\n"],"names":["glob","this","help"],"mappings":"AAAA,IAAAA,EAAe,IAAM,EACN,CAAE,IAAXC,SACF,QAAQ,IAAI,MAAM,CACtB,ECHO,SAASC,GAAO,CACrB,QAAQ,IAAI,MAAM,CACpB"}`)
 })
