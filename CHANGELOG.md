@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/prantlf/rollup-plugin-esbuild-minify/compare/v1.0.5...v1.0.6) (2022-08-01)
+
+
+### Bug Fixes
+
+* Upgrade dependencies ([53daa11](https://github.com/prantlf/rollup-plugin-esbuild-minify/commit/53daa1145f2bfdc6746378ce3636fd87dcbf820d))
+
 ## [1.0.5](https://github.com/prantlf/rollup-plugin-esbuild-minify/compare/v1.0.4...v1.0.5) (2022-06-18)
 
 
