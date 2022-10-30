@@ -31,7 +31,7 @@ test('minify iife', async () => {
   })
 
   const code = await readFile('test/out.js', 'utf8')
-  strictEqual(code, 'var glob=function(e){var l=()=>{({}!==void 0)&&console.log("glob")};function o(){console.log("help")}return e.glob=l,e.help=o,Object.defineProperty(e,"__esModule",{value:!0}),e}({});\n')
+  strictEqual(code, 'var glob=function(l){var o=()=>{({}!==void 0)&&console.log("glob")};function n(){console.log("help")}return l.glob=o,l.help=n,l}({});\n')
 })
 
 test('minify umd', async () => {
@@ -44,7 +44,7 @@ test('minify umd', async () => {
   })
 
   const code = await readFile('test/out.js', 'utf8')
-  strictEqual(code, '(function(e,o){typeof exports=="object"&&typeof module<"u"?o(exports):typeof define=="function"&&define.amd?define(["exports"],o):(e=typeof globalThis<"u"?globalThis:e||self,o(e.glob={}))})(this,function(e){var o=()=>{({}!==void 0)&&console.log("glob")};function n(){console.log("help")}e.glob=o,e.help=n,Object.defineProperty(e,"__esModule",{value:!0})});\n')
+  strictEqual(code, '(function(e,o){typeof exports=="object"&&typeof module<"u"?o(exports):typeof define=="function"&&define.amd?define(["exports"],o):(e=typeof globalThis<"u"?globalThis:e||self,o(e.glob={}))})(this,function(e){var o=()=>{({}!==void 0)&&console.log("glob")};function n(){console.log("help")}e.glob=o,e.help=n});\n')
 })
 
 test('minify cjs', async () => {
@@ -56,7 +56,7 @@ test('minify cjs', async () => {
   })
 
   const code = await readFile('test/out.js', 'utf8')
-  strictEqual(code, 'Object.defineProperty(exports,"__esModule",{value:!0});var e=()=>{({}!==void 0)&&console.log("glob")};function l(){console.log("help")}exports.glob=e,exports.help=l;\n')
+  strictEqual(code, 'var l=()=>{({}!==void 0)&&console.log("glob")};function o(){console.log("help")}exports.glob=l,exports.help=o;\n')
 })
 
 test('minify es', async () => {

@@ -25,7 +25,7 @@
     "lib"
   ],
   "engines": {
-    "node": ">= 14"
+    "node": ">= 14.18"
   },
   "scripts": {
     "prepare": "rollup -c",
@@ -61,19 +61,19 @@
     ]
   },
   "dependencies": {
-    "esbuild": "^0.14.51"
+    "esbuild": "^0.15.12"
   },
   "devDependencies": {
     "@node-rs/deno-lint": "^1.14.0",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
     "c8": "^7.12.0",
-    "rollup": "^2.77.2",
+    "rollup": "^3.2.3",
     "tehanu": "^1.0.1",
     "tehanu-repo-coco": "^1.0.0"
   },
   "peerDependencies": {
-    "rollup": "^2"
+    "rollup": "^2 || ^3"
   },
   "keywords": [
     "rollup",
