@@ -5,7 +5,7 @@
 ](https://www.npmjs.com/package/rollup-plugin-esbuild-minify)
 [![Coverage](https://codecov.io/gh/prantlf/rollup-plugin-esbuild-minify/branch/master/graph/badge.svg)](https://codecov.io/gh/prantlf/rollup-plugin-esbuild-minify)
 
-[Rollup] plugin to minify generated bundles using [esbuild].
+[Rollup] plugin to minify or clean up generated bundles using [esbuild].
 
 Simpler than [rollup-plugin-esbuild] and [rollup-plugin-esbuild-transform], focusing only on minification of the bundled JavaScript output.
 
@@ -78,6 +78,15 @@ Default: `'none'`
 Allows including or extracting legal comments. A "legal comment" is considered to be any statement-level comment that contains `@license` or `@preserve` or that starts with `//!` or `/*!`.
 
 See also the [original documentation](https://esbuild.github.io/api/#legal-comments).
+
+### `minify`
+
+Type: `Boolean`<br>
+Default: `true`
+
+Allows disabling the minification. The code will be pretty-printed instead. It can be used to clean up the code.
+
+See also the [original documentation](https://esbuild.github.io/api/#minify).
 
 ## Contributing
 

@@ -1,7 +1,7 @@
 {
   "name": "rollup-plugin-esbuild-minify",
   "version": "1.0.8",
-  "description": "Rollup plugin to minify generated bundles using esbuild.",
+  "description": "Rollup plugin to minify or clean up generated bundles using esbuild.",
   "author": "Ferdinand Prantl <prantlf@gmail.com> (http://prantl.tk)",
   "license": "MIT",
   "licenses": [
