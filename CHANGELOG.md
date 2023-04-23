@@ -1,3 +1,12 @@
+# [1.1.0](https://github.com/prantlf/rollup-plugin-esbuild-minify/compare/v1.0.8...v1.1.0) (2023-04-23)
+
+
+### Features
+
+* Allows disabling the minification to just clean up the code ([131c10e](https://github.com/prantlf/rollup-plugin-esbuild-minify/commit/131c10e5ea8f035673205899380f1565b2503efd))
+* Allows including or extracting legal comments ([911ee5b](https://github.com/prantlf/rollup-plugin-esbuild-minify/commit/911ee5b8b08b42917bdfca69a23a55bb20fa996b))
+* Reduce the default log level to warning ([d721de8](https://github.com/prantlf/rollup-plugin-esbuild-minify/commit/d721de84957ac5c4bfef29e9c1365c0a5e807ec8))
+
 ## [1.0.8](https://github.com/prantlf/rollup-plugin-esbuild-minify/compare/v1.0.7...v1.0.8) (2023-04-23)
 
 
