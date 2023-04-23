@@ -61,14 +61,14 @@
     ]
   },
   "dependencies": {
-    "esbuild": "^0.15.12"
+    "esbuild": "^0.17.18"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "c8": "^7.12.0",
-    "denolint": "^2.0.4",
-    "rollup": "^3.2.3",
+    "c8": "^7.13.0",
+    "denolint": "^2.0.9",
+    "rollup": "^3.20.7",
     "tehanu": "^1.0.1",
     "tehanu-repo-coco": "^1.0.0"
   },
