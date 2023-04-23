@@ -55,7 +55,7 @@ The following options can be passed in an object to the plugin function to chang
 ### `logLevel`
 
 Type: `'silent' | 'error' | 'warning' | 'info' | 'debug' | 'verbose'`<br>
-Default: `'info'`
+Default: `'warning'`
 
 Controls the number and detail of progress messages logged on the console.
 
