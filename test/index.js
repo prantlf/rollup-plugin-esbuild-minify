@@ -81,5 +81,15 @@ test('minify with source map', async () => {
   strictEqual(code, `var o=()=>{({}!==void 0)&&console.log("glob")};function l(){console.log("help")}export{o as glob,l as help};
 //# sourceMappingURL=out.js.map
 `)
-  strictEqual(map, `{"version":3,"file":"out.js","sources":["glob.js","help.js"],"sourcesContent":["export default () => {\\n  if (this !== {})\\n    console.log('glob')\\n}\\n","export function help() {\\n  console.log('help')\\n}\\n"],"names":["glob","this","help"],"mappings":"AAAA,IAAAA,EAAe,IAAM,EACN,CAAE,IAAXC,SACF,QAAQ,IAAI,MAAM,CACtB,ECHO,SAASC,GAAO,CACrB,QAAQ,IAAI,MAAM,CACpB"}`)
+  strictEqual(map, `{"version":3,"file":"out.js","sources":["glob.js","help.js"],"sourcesContent":["export default () => {\\n  if (this !== {})\\n    console.log('glob')\\n}\\n","//! prints usage instructions\\nexport function help() {\\n  console.log('help')\\n}\\n"],"names":["glob","this","help"],"mappings":"AAAA,IAAAA,EAAe,IAAM,EACN,CAAE,IAAXC,SACF,QAAQ,IAAI,MAAM,CACtB,ECFO,SAASC,GAAO,CACrB,QAAQ,IAAI,MAAM,CACpB"}`)
+})
+
+test.only('minify with legal comments', async () => {
+  await bundle.write({
+    plugins: [minify({ legalComments: 'inline' })],
+    file: 'test/out.js'
+  })
+
+  const code = await readFile('test/out.js', 'utf8')
+  strictEqual(code, 'var o=()=>{({}!==void 0)&&console.log("glob")};//! prints usage instructions\nfunction l(){console.log("help")}export{o as glob,l as help};\n')
 })

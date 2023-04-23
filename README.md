@@ -59,12 +59,25 @@ Default: `'info'`
 
 Controls the number and detail of progress messages logged on the console.
 
+See also the [original documentation](https://esbuild.github.io/api/#log-level).
+
 ### `logLimit`
 
 Type: `Integer`<br>
 Default: `10`
 
 Maximum number of logged messages. If zero (`0`) is provided, all messages will be logged.
+
+See also the [original documentation](https://esbuild.github.io/api/#log-limit).
+
+### `legalComments`
+
+Type: `'none' | 'inline' | 'eof' | 'linked' | 'external'`<br>
+Default: `'none'`
+
+Allows including or extracting legal comments. A "legal comment" is considered to be any statement-level comment that contains `@license` or `@preserve` or that starts with `//!` or `/*!`.
+
+See also the [original documentation](https://esbuild.github.io/api/#legal-comments).
 
 ## Contributing
 
