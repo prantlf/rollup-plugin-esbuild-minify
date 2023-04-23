@@ -7,7 +7,7 @@
 
 [Rollup] plugin to minify or clean up generated bundles using [esbuild].
 
-Simpler than [rollup-plugin-esbuild] and [rollup-plugin-esbuild-transform], focusing only on minification of the bundled JavaScript output.
+Simpler than [rollup-plugin-esbuild] and [rollup-plugin-esbuild-transform], focusing only on minification of the bundled JavaScript output. Faster than [@rollup/plugin-terser].
 
 ## Synopsis
 
@@ -109,4 +109,5 @@ Licensed under the [MIT License].
 [programmatically]: https://www.rollupjs.org/guide/en/#javascript-api
 [rollup-plugin-esbuild]: https://www.npmjs.com/package/rollup-plugin-esbuild
 [rollup-plugin-esbuild-transform]: https://www.npmjs.com/package/rollup-plugin-esbuild-transform
+[@rollup/plugin-terser]: https://www.npmjs.com/package/@rollup/plugin-terser
 [esbuild]: https://esbuild.github.io/
