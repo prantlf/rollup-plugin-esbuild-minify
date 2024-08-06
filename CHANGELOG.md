@@ -1,12 +1,12 @@
-## [1.1.1](https://github.com/prantlf/rollup-plugin-esbuild-minify/compare/v1.1.0...v1.1.1) (2023-10-08)
+# Changes
 
+## [1.1.1](https://github.com/prantlf/rollup-plugin-esbuild-minify/compare/v1.1.0...v1.1.1) (2023-10-08)
 
 ### Bug Fixes
 
 * Upgrade dependencies, support Rollup 4 ([7a929b6](https://github.com/prantlf/rollup-plugin-esbuild-minify/commit/7a929b633182092670c69d4e9927a212f7b96be6))
 
-# [1.1.0](https://github.com/prantlf/rollup-plugin-esbuild-minify/compare/v1.0.8...v1.1.0) (2023-04-23)
-
+## [1.1.0](https://github.com/prantlf/rollup-plugin-esbuild-minify/compare/v1.0.8...v1.1.0) (2023-04-23)
 
 ### Features
 
@@ -16,13 +16,11 @@
 
 ## [1.0.8](https://github.com/prantlf/rollup-plugin-esbuild-minify/compare/v1.0.7...v1.0.8) (2023-04-23)
 
-
 ### Bug Fixes
 
 * Upgrade dependencies ([49cddb4](https://github.com/prantlf/rollup-plugin-esbuild-minify/commit/49cddb4360929923dec05b60b36db3fe0d3beed2))
 
 ## [1.0.7](https://github.com/prantlf/rollup-plugin-esbuild-minify/compare/v1.0.6...v1.0.7) (2022-10-30)
-
 
 ### Bug Fixes
 
@@ -30,13 +28,11 @@
 
 ## [1.0.6](https://github.com/prantlf/rollup-plugin-esbuild-minify/compare/v1.0.5...v1.0.6) (2022-08-01)
 
-
 ### Bug Fixes
 
 * Upgrade dependencies ([53daa11](https://github.com/prantlf/rollup-plugin-esbuild-minify/commit/53daa1145f2bfdc6746378ce3636fd87dcbf820d))
 
 ## [1.0.5](https://github.com/prantlf/rollup-plugin-esbuild-minify/compare/v1.0.4...v1.0.5) (2022-06-18)
-
 
 ### Bug Fixes
 
@@ -45,13 +41,11 @@
 
 ## [1.0.4](https://github.com/prantlf/rollup-plugin-esbuild-minify/compare/v1.0.3...v1.0.4) (2022-06-03)
 
-
 ### Bug Fixes
 
 * Upgrade dependencies ([cdac8dd](https://github.com/prantlf/rollup-plugin-esbuild-minify/commit/cdac8dd2efb5dc99268738febd3c5b7f6bc15804))
 
 ## [1.0.3](https://github.com/prantlf/rollup-plugin-esbuild-minify/compare/v1.0.2...v1.0.3) (2022-06-03)
-
 
 ### Bug Fixes
 
@@ -59,18 +53,16 @@
 
 ## [1.0.2](https://github.com/prantlf/rollup-plugin-esbuild-minify/compare/v1.0.1...v1.0.2) (2022-05-19)
 
-
 ### Bug Fixes
 
 * Remove lit from peer deps ([9c5cc85](https://github.com/prantlf/rollup-plugin-esbuild-minify/commit/9c5cc852117177d0bd41572e86cb8a4bd4782003))
 
 ## [1.0.1](https://github.com/prantlf/rollup-plugin-esbuild-minify/compare/v1.0.0...v1.0.1) (2022-05-18)
 
-
 ### Bug Fixes
 
 * Remove all comments when minifying ([0051cb2](https://github.com/prantlf/rollup-plugin-esbuild-minify/commit/0051cb23235ac43c12011a4ece2a78bae2908f75))
 
-# 1.0.0 (2022-05-18)
+## 1.0.0 (2022-05-18)
 
 Initial release

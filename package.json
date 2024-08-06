@@ -21,6 +21,10 @@
   "type": "module",
   "module": "lib/index.js",
   "main": "lib/index.cjs",
+  "exports": {
+    "require": "./lib/index.cjs",
+    "import": "./lib/index.js"
+  },
   "files": [
     "lib"
   ],
@@ -29,10 +33,10 @@
   },
   "scripts": {
     "prepare": "rollup -c",
-    "lint": "denolint",
+    "lint": "biome lint *.js lib test",
     "check": "node test",
     "cover": "c8 node test",
-    "test": "denolint && c8 node test"
+    "test": "biome lint *.js lib test && c8 node test"
   },
   "c8": {
     "check-coverage": true,
@@ -45,32 +49,15 @@
     "functions": 100,
     "statements": 100
   },
-  "release": {
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      [
-        "@semantic-release/github",
-        {
-          "failComment": false
-        }
-      ],
-      "@semantic-release/git"
-    ]
-  },
   "dependencies": {
-    "esbuild": "^0.19.4"
+    "esbuild": "^0.23.0"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/git": "^10.0.1",
-    "c8": "^8.0.1",
-    "denolint": "^2.0.12",
-    "rollup": "^4.0.2",
+    "@biomejs/biome": "^1.8.3",
+    "c8": "^10.1.2",
+    "rollup": "^4.20.0",
     "tehanu": "^1.0.1",
-    "tehanu-repo-coco": "^1.0.0"
+    "tehanu-repo-coco": "^1.0.1"
   },
   "peerDependencies": {
     "rollup": "^2 || ^3 || ^4"
