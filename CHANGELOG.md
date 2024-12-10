@@ -6,6 +6,8 @@
 
 * Upgrade dependencies ([c1c45b2](https://github.com/prantlf/rollup-plugin-esbuild-minify/commit/c1c45b24125730cdf4855563c94b052f4f4d9854))
 
+Also add the `exports` property to `package.json`.
+
 ## [1.1.1](https://github.com/prantlf/rollup-plugin-esbuild-minify/compare/v1.1.0...v1.1.1) (2023-10-08)
 
 ### Bug Fixes
