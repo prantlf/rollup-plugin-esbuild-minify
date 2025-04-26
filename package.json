@@ -50,12 +50,12 @@
     "statements": 100
   },
   "dependencies": {
-    "esbuild": "^0.24.0"
+    "esbuild": "^0.25.3"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "c8": "^10.1.3",
-    "rollup": "^4.28.1",
+    "rollup": "^4.40.0",
     "tehanu": "^1.0.1",
     "tehanu-repo-coco": "^1.0.1"
   },
